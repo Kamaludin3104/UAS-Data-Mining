@@ -1,11 +1,65 @@
-# 📊 UAS Data Mining - Preprocessing dan Unsupervised Learning (K-Means Clustering)
+# 📊 UAS Data Mining
 
+## Preprocessing dan Unsupervised Learning (K-Means Clustering)
+
+![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-2.x-blue?logo=pandas)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-KMeans-orange?logo=scikitlearn)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
+<div align="center">
+
+# 🛍️ Mall Customers Clustering Analysis
+
+### Implementasi Algoritma K-Means Clustering pada Dataset Mall Customers
+
+---
+
+## 👨‍🎓 Disusun Oleh
+
+### Ahmad Husni Kamalluddin
+
+**Mata Kuliah:** Data Mining
+
+**Proyek:** UAS Data Mining
+
+**Tahun:** 2026
+
+</div>
+
+---
+
+## 📌 Deskripsi Singkat
+
+Project ini merupakan implementasi metode **Unsupervised Learning** menggunakan algoritma **K-Means Clustering** untuk mengelompokkan pelanggan berdasarkan karakteristik usia, pendapatan tahunan, dan tingkat pengeluaran (*Spending Score*). Sebelum proses clustering dilakukan, dataset terlebih dahulu melalui tahap **preprocessing**, meliputi pengecekan missing value, data duplikat, serta standardisasi data menggunakan **StandardScaler**. Selanjutnya dilakukan penentuan jumlah cluster menggunakan **Elbow Method**, implementasi K-Means, visualisasi hasil clustering, dan evaluasi menggunakan **Silhouette Score**.
+
+---
+
+## 📷 Hasil Akhir Clustering
+
+> *(Tambahkan screenshot hasil visualisasi clustering di sini.)*
+
+![Hasil Clustering](images/clustering.png)
+
+---
+
+# 📑 Daftar Isi
+
+- BAB I Pendahuluan
+- BAB II Landasan Teori
+- BAB III Implementasi
+- BAB IV Hasil dan Pembahasan
+- Kesimpulan
+- Daftar Pustaka
+
+---
 ## 👨‍🎓 Identitas Mahasiswa
 
 - **Nama:** Ahmad Husni Kamalluddin
 - **Mata Kuliah:** Data Mining
+- **Jenis Tugas:** UAS Data Mining
 - **Topik:** Preprocessing dan Unsupervised Learning (K-Means Clustering)
-
+- **Dataset:** Mall Customers Dataset
 ---
 
 # BAB I Pendahuluan
