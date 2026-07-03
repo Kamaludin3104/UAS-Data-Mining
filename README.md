@@ -215,7 +215,9 @@ Library yang digunakan antara lain:
 
 **Screenshot kode:**
 
-> Tambahkan screenshot Cell 1 di sini.
+> <p align="center">
+  <img src="images/cell1.png" width="900">
+</p> Cell 1 di sini.
 
 Library tersebut digunakan untuk membaca dataset, melakukan preprocessing, membangun model clustering, melakukan visualisasi, dan mengevaluasi hasil clustering.
 
@@ -227,7 +229,9 @@ Dataset dibaca menggunakan fungsi `read_csv()` dari library Pandas.
 
 **Screenshot kode:**
 
-> Tambahkan screenshot Cell 2 di sini.
+> <p align="center">
+  <img src="images/cell2.png" width="900">
+</p> Cell 2 di sini.
 
 Setelah dataset berhasil dibaca, dilakukan pengecekan isi dataset menggunakan fungsi `head()`. Hasilnya menunjukkan bahwa dataset memiliki lima atribut utama yang siap digunakan pada proses analisis.
 
@@ -239,7 +243,15 @@ Tahap berikutnya adalah melihat informasi dataset menggunakan fungsi `info()` da
 
 **Screenshot kode:**
 
-> Tambahkan screenshot Cell 3 dan Cell 4 di sini.
+> <p align="center">
+  <img src="images/cell3.png" width="900">
+</p><p align="center">
+  <img src="images/cell3.png" width="900">
+</p>
+
+<p align="center">
+  <img src="images/cell4.png" width="900">
+</p> Cell 3 dan Cell 4 di sini.
 
 Hasil pemeriksaan menunjukkan bahwa dataset memiliki **200 data**, seluruh atribut numerik bertipe integer, sedangkan atribut Gender bertipe string.
 
@@ -251,7 +263,17 @@ Tahap preprocessing dilakukan dengan mengecek missing value dan data duplikat.
 
 **Screenshot kode:**
 
-> Tambahkan screenshot Cell 5, Cell 6, dan Cell 7 di sini.
+> <p align="center">
+  <img src="images/cell5.png" width="900">
+</p>
+
+<p align="center">
+  <img src="images/cell6.png" width="900">
+</p>
+
+<p align="center">
+  <img src="images/cell7.png" width="900">
+</p> Cell 5, Cell 6, dan Cell 7 di sini.
 
 Berdasarkan hasil pemeriksaan diperoleh:
 
@@ -268,7 +290,9 @@ Sebelum proses clustering dilakukan, data dinormalisasi menggunakan StandardScal
 
 **Screenshot kode:**
 
-> Tambahkan screenshot Cell 8 di sini.
+> <p align="center">
+<img src="images/cell8.png" width="900">
+</p> Cell 8 di sini.
 
 Standardisasi dilakukan agar seluruh atribut numerik memiliki skala yang sama sehingga proses perhitungan jarak pada algoritma K-Means menjadi lebih akurat.
 
@@ -280,7 +304,9 @@ Sebelum melakukan proses clustering, terlebih dahulu ditentukan jumlah cluster y
 
 **Screenshot kode dan hasil:**
 
-> Tambahkan screenshot Cell 9 beserta grafik Elbow Method.
+> <p align="center">
+<img src="images/cell9.png" width="900">
+</p> Cell 9 beserta grafik Elbow Method.
 
 Berdasarkan grafik Elbow Method, terlihat bahwa titik siku (elbow) berada pada **K = 5**, sehingga jumlah cluster yang digunakan pada proses K-Means Clustering adalah **5 cluster**.
 
@@ -292,7 +318,9 @@ Setelah jumlah cluster ditentukan, proses pengelompokan dilakukan menggunakan al
 
 **Screenshot kode:**
 
-> Tambahkan screenshot Cell 10.
+> <p align="center">
+<img src="images/cell10.png" width="900">
+</p> Cell 10.
 
 Hasil proses clustering menghasilkan sebuah kolom baru bernama **Cluster** yang menunjukkan kelompok setiap pelanggan berdasarkan karakteristik usia, pendapatan tahunan, dan tingkat pengeluaran.
 
@@ -304,7 +332,9 @@ Untuk mempermudah analisis, hasil clustering divisualisasikan menggunakan **Scat
 
 **Screenshot grafik:**
 
-> Tambahkan screenshot Cell 11.
+> <p align="center">
+<img src="images/cell11.png" width="900">
+</p> Cell 11.
 
 Berdasarkan visualisasi tersebut terlihat bahwa pelanggan berhasil dikelompokkan menjadi lima cluster dengan karakteristik yang berbeda-beda.
 
@@ -316,7 +346,9 @@ Evaluasi dilakukan menggunakan **Silhouette Score** untuk mengetahui kualitas ha
 
 **Screenshot hasil:**
 
-> Tambahkan screenshot Cell 12.
+> <p align="center">
+<img src="images/cell12.png" width="900">
+</p> Cell 12.
 
 Hasil evaluasi menunjukkan nilai:
 
@@ -340,7 +372,9 @@ Jumlah anggota pada setiap cluster ditunjukkan pada tabel berikut.
 
 **Screenshot hasil Cell 13:**
 
-> Tambahkan screenshot Cell 13.
+> <p align="center">
+<img src="images/cell13.png" width="900">
+</p> Cell 13.
 
 Distribusi tersebut menunjukkan bahwa jumlah anggota pada setiap cluster tidak sama, sehingga setiap kelompok memiliki karakteristik pelanggan yang berbeda.
 
@@ -360,7 +394,9 @@ Berdasarkan hasil rata-rata setiap cluster diperoleh karakteristik sebagai berik
 
 **Screenshot hasil Cell 14:**
 
-> Tambahkan screenshot Cell 14.
+> <p align="center">
+<img src="images/cell14.png" width="900">
+</p> Cell 14.
 
 Analisis masing-masing cluster adalah sebagai berikut.
 
