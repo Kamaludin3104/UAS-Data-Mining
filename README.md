@@ -126,3 +126,96 @@ Nilai Silhouette Score berada pada rentang **-1 hingga 1**, dengan interpretasi 
 - Nilai kurang dari **0** menunjukkan hasil clustering kurang baik.
 
 Pada proyek ini diperoleh nilai **Silhouette Score sebesar 0.40846873777345605**, yang menunjukkan bahwa hasil pengelompokan berada pada kategori **cukup baik**, sehingga algoritma K-Means mampu mengelompokkan data pelanggan dengan baik berdasarkan karakteristiknya.
+---
+
+# BAB III Implementasi
+
+## 3.1 Dataset
+
+Dataset yang digunakan pada proyek ini adalah **Mall Customers Dataset**, yang berisi informasi mengenai pelanggan sebuah pusat perbelanjaan. Dataset terdiri dari **200 data pelanggan** dengan lima atribut, yaitu:
+
+| No | Atribut | Keterangan |
+|----|----------|------------|
+| 1 | CustomerID | ID pelanggan |
+| 2 | Gender | Jenis kelamin |
+| 3 | Age | Umur pelanggan |
+| 4 | Annual Income (k$) | Pendapatan tahunan pelanggan |
+| 5 | Spending Score (1-100) | Tingkat pengeluaran pelanggan |
+
+Dataset ini digunakan untuk mengelompokkan pelanggan berdasarkan karakteristik usia, pendapatan tahunan, dan tingkat pengeluaran menggunakan algoritma K-Means Clustering.
+
+---
+
+## 3.2 Import Library
+
+Tahap pertama adalah mengimpor beberapa library Python yang dibutuhkan selama proses analisis data.
+
+Library yang digunakan antara lain:
+
+- Pandas
+- NumPy
+- Matplotlib
+- StandardScaler
+- KMeans
+- Silhouette Score
+
+**Screenshot kode:**
+
+> Tambahkan screenshot Cell 1 di sini.
+
+Library tersebut digunakan untuk membaca dataset, melakukan preprocessing, membangun model clustering, melakukan visualisasi, dan mengevaluasi hasil clustering.
+
+---
+
+## 3.3 Membaca Dataset
+
+Dataset dibaca menggunakan fungsi `read_csv()` dari library Pandas.
+
+**Screenshot kode:**
+
+> Tambahkan screenshot Cell 2 di sini.
+
+Setelah dataset berhasil dibaca, dilakukan pengecekan isi dataset menggunakan fungsi `head()`. Hasilnya menunjukkan bahwa dataset memiliki lima atribut utama yang siap digunakan pada proses analisis.
+
+---
+
+## 3.4 Informasi Dataset
+
+Tahap berikutnya adalah melihat informasi dataset menggunakan fungsi `info()` dan `describe()`.
+
+**Screenshot kode:**
+
+> Tambahkan screenshot Cell 3 dan Cell 4 di sini.
+
+Hasil pemeriksaan menunjukkan bahwa dataset memiliki **200 data**, seluruh atribut numerik bertipe integer, sedangkan atribut Gender bertipe string.
+
+---
+
+## 3.5 Data Cleaning
+
+Tahap preprocessing dilakukan dengan mengecek missing value dan data duplikat.
+
+**Screenshot kode:**
+
+> Tambahkan screenshot Cell 5, Cell 6, dan Cell 7 di sini.
+
+Berdasarkan hasil pemeriksaan diperoleh:
+
+- Missing Value = **0**
+- Duplicate Data = **0**
+
+Artinya dataset sudah bersih sehingga tidak diperlukan proses penghapusan maupun imputasi data.
+
+---
+
+## 3.6 Standardisasi Data
+
+Sebelum proses clustering dilakukan, data dinormalisasi menggunakan StandardScaler.
+
+**Screenshot kode:**
+
+> Tambahkan screenshot Cell 8 di sini.
+
+Standardisasi dilakukan agar seluruh atribut numerik memiliki skala yang sama sehingga proses perhitungan jarak pada algoritma K-Means menjadi lebih akurat.
+
+---
