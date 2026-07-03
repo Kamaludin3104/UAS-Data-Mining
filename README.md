@@ -219,3 +219,99 @@ Sebelum proses clustering dilakukan, data dinormalisasi menggunakan StandardScal
 Standardisasi dilakukan agar seluruh atribut numerik memiliki skala yang sama sehingga proses perhitungan jarak pada algoritma K-Means menjadi lebih akurat.
 
 ---
+
+## 3.7 Penentuan Jumlah Cluster Menggunakan Elbow Method
+
+Sebelum melakukan proses clustering, terlebih dahulu ditentukan jumlah cluster yang optimal menggunakan **Elbow Method**. Metode ini dilakukan dengan menghitung nilai **Within Cluster Sum of Squares (WCSS)** pada beberapa nilai K, kemudian divisualisasikan dalam bentuk grafik.
+
+**Screenshot kode dan hasil:**
+
+> Tambahkan screenshot Cell 9 beserta grafik Elbow Method.
+
+Berdasarkan grafik Elbow Method, terlihat bahwa titik siku (elbow) berada pada **K = 5**, sehingga jumlah cluster yang digunakan pada proses K-Means Clustering adalah **5 cluster**.
+
+---
+
+## 3.8 Implementasi K-Means Clustering
+
+Setelah jumlah cluster ditentukan, proses pengelompokan dilakukan menggunakan algoritma **K-Means** dengan jumlah cluster sebanyak lima.
+
+**Screenshot kode:**
+
+> Tambahkan screenshot Cell 10.
+
+Hasil proses clustering menghasilkan sebuah kolom baru bernama **Cluster** yang menunjukkan kelompok setiap pelanggan berdasarkan karakteristik usia, pendapatan tahunan, dan tingkat pengeluaran.
+
+---
+
+## 3.9 Visualisasi Hasil Clustering
+
+Untuk mempermudah analisis, hasil clustering divisualisasikan menggunakan **Scatter Plot**. Setiap warna pada grafik menunjukkan kelompok (cluster) yang berbeda.
+
+**Screenshot grafik:**
+
+> Tambahkan screenshot Cell 11.
+
+Berdasarkan visualisasi tersebut terlihat bahwa pelanggan berhasil dikelompokkan menjadi lima cluster dengan karakteristik yang berbeda-beda.
+
+---
+
+## 3.10 Evaluasi Model
+
+Evaluasi dilakukan menggunakan **Silhouette Score** untuk mengetahui kualitas hasil clustering.
+
+**Screenshot hasil:**
+
+> Tambahkan screenshot Cell 12.
+
+Hasil evaluasi menunjukkan nilai:
+
+**Silhouette Score = 0.40846873777345605**
+
+Nilai tersebut menunjukkan bahwa kualitas clustering berada pada kategori **cukup baik**, sehingga model K-Means mampu mengelompokkan pelanggan berdasarkan karakteristik yang dimiliki.
+
+---
+
+## 3.11 Hasil Clustering
+
+Jumlah anggota pada setiap cluster ditunjukkan pada tabel berikut.
+
+| Cluster | Jumlah Pelanggan |
+|---------:|-----------------:|
+| 0 | 58 |
+| 1 | 40 |
+| 2 | 26 |
+| 3 | 45 |
+| 4 | 31 |
+
+**Screenshot hasil Cell 13:**
+
+> Tambahkan screenshot Cell 13.
+
+Distribusi tersebut menunjukkan bahwa jumlah anggota pada setiap cluster tidak sama, sehingga setiap kelompok memiliki karakteristik pelanggan yang berbeda.
+
+---
+
+## 3.12 Analisis Karakteristik Cluster
+
+Berdasarkan hasil rata-rata setiap cluster diperoleh karakteristik sebagai berikut.
+
+| Cluster | Usia | Pendapatan (k$) | Spending Score |
+|---------:|------:|----------------:|---------------:|
+| 0 | 55.28 | 47.62 | 41.71 |
+| 1 | 32.88 | 86.10 | 81.53 |
+| 2 | 25.77 | 26.12 | 74.85 |
+| 3 | 26.73 | 54.31 | 40.91 |
+| 4 | 44.39 | 89.77 | 18.48 |
+
+**Screenshot hasil Cell 14:**
+
+> Tambahkan screenshot Cell 14.
+
+Analisis masing-masing cluster adalah sebagai berikut.
+
+- **Cluster 0** terdiri dari pelanggan dengan usia relatif lebih tua, pendapatan menengah, dan tingkat pengeluaran yang cukup rendah.
+- **Cluster 1** berisi pelanggan muda dengan pendapatan tinggi serta tingkat pengeluaran tinggi. Kelompok ini merupakan pelanggan yang paling potensial.
+- **Cluster 2** terdiri dari pelanggan muda dengan pendapatan rendah namun memiliki tingkat pengeluaran yang tinggi.
+- **Cluster 3** merupakan pelanggan dengan usia muda, pendapatan sedang, dan tingkat pengeluaran sedang.
+- **Cluster 4** memiliki pendapatan tinggi tetapi tingkat pengeluaran paling rendah sehingga berpotensi menjadi target strategi promosi untuk meningkatkan pembelian.
